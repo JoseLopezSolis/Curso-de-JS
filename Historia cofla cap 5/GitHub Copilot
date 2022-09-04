@@ -1,0 +1,187 @@
+Synthesizing 6/10 solutions
+
+=======
+
+(studentData) =>{
+    const totalAttent = 100; //Total de asistencias
+
+    //Works in class -- If He has all he aprove with 75%
+    const programmingWorks = 10;
+    const dataStructuresWorks = 20;
+    const artifitialInteligentWorks = 12;
+    const mathWorks = 22;
+
+    //Total points to pass the semester
+    const totalPointsToPass = programmingWorks+dataStructuresWorks+artifitialInteligentWorks+mathWorks;
+    //console.log(totalPointsToPass);
+    let totalPoints = 0;
+    for(subject in studentData){
+        totalPoints += studentData[subject][0];
+    }
+    //console.log(totalPoints);
+    let result = totalPoints/totalPointsToPass;
+    //console.log(result);
+    if(result >= 0.75){
+        return true;
+    }
+    else{
+        return false;
+    }
+}
+
+=======
+
+(studentData) =>{
+    const totalAttent = 100; //Total de asistencias
+
+    //Works in class -- If He has all he aprove with 75%
+    const programmingWorks = 10;
+    const dataStructuresWorks = 20;
+    const artifitialInteligentWorks = 12;
+    const mathWorks = 22;
+
+    //Total points to pass the semester
+    const totalPointsToPass = programmingWorks+dataStructuresWorks+artifitialInteligentWorks+mathWorks;
+    //console.log(totalPointsToPass);
+    let totalPoints = 0;
+    for(subject in studentData){
+        //console.log(studentData[subject]);
+        totalPoints += studentData[subject][0];
+    }
+    //console.log(totalPoints);
+    let result = totalPoints/totalPointsToPass;
+    //console.log(result);
+    if(result >= 0.75){
+        return true;
+    }
+    return false;
+}
+
+=======
+
+(studentData) =>{
+    const totalAttent = 100; //Total de asistencias
+
+    //Works in class -- If He has all he aprove with 75%
+    const programmingWorks = 10;
+    const dataStructuresWorks = 20;
+    const artifitialInteligentWorks = 12;
+    const mathWorks = 22;
+
+    //Total points to pass the semester
+    const totalPointsToPass = programmingWorks+dataStructuresWorks+artifitialInteligentWorks+mathWorks;
+    //console.log(totalPointsToPass);
+    //Total points of the student
+    let totalPointsStudent = 0;
+    for(subject in studentData){
+        totalPointsStudent += studentData[subject][0];
+    }
+    //console.log(totalPointsStudent);
+    //Percentage of the student
+    let percentageStudent = (totalPointsStudent*100)/totalPointsToPass;
+    //console.log(percentageStudent);
+    //Percentage of the attend
+    let percentageAttent = (totalAttent*100)/totalAttentStudent;
+    //console.log(percentageAttent);
+    //If the student has aprobate the subject
+    if(percentageStudent >= percentageAttent){
+        return true;
+    }
+    return false;
+}
+
+=======
+
+(studentData) =>{
+    const totalAttent = 100; //Total de asistencias
+
+    //Works in class -- If He has all he aprove with 75%
+    const programmingWorks = 10;
+    const dataStructuresWorks = 20;
+    const artifitialInteligentWorks = 12;
+    const mathWorks = 22;
+
+    //Total points to pass the semester
+    const totalPointsToPass = programmingWorks+dataStructuresWorks+artifitialInteligentWorks+mathWorks;
+    //console.log(totalPointsToPass);
+    //console.log(totalAttent);
+    //console.log(studentData);
+    //console.log(studentData['programming']);
+    //console.log(studentData['dataStructures']);
+    //console.log(studentData['artifitialInteligent']);
+    //console.log(studentData['math']);
+    let totalPoints = 0;
+    for(subject in studentData){
+        //console.log(studentData[subject]);
+        totalPoints += studentData[subject][0];
+    }
+    //console.log(totalPoints);
+    if(totalPoints >= (totalPointsToPass*0.75)){
+        return true;
+    }
+    else{
+        return false;
+    }
+}
+
+=======
+
+(studentData) =>{
+    const totalAttent = 100; //Total de asistencias
+
+    //Works in class -- If He has all he aprove with 75%
+    const programmingWorks = 10;
+    const dataStructuresWorks = 20;
+    const artifitialInteligentWorks = 12;
+    const mathWorks = 22;
+
+    //Total points to pass the semester
+    const totalPointsToPass = programmingWorks+dataStructuresWorks+artifitialInteligentWorks+mathWorks;
+    //console.log(totalPointsToPass);
+    //console.log(studentData);
+    let totalPoints = 0;
+    for(subject in studentData){
+        totalPoints += studentData[subject][0];
+    }
+    //console.log(totalPoints);
+    let percentage = totalPoints/totalPointsToPass;
+    //console.log(percentage);
+    let percentageAttent = totalAttent/totalAttentStudent;
+    //console.log(percentageAttent);
+    if(percentage >= 0.75 && percentageAttent >= 0.9){
+        return true;
+    }else{
+        return false;
+    }
+}
+
+=======
+
+(studentData) =>{
+    const totalAttent = 100; //Total de asistencias
+
+    //Works in class -- If He has all he aprove with 75%
+    const programmingWorks = 10;
+    const dataStructuresWorks = 20;
+    const artifitialInteligentWorks = 12;
+    const mathWorks = 22;
+
+    //Total points to pass the semester
+    const totalPointsToPass = programmingWorks+dataStructuresWorks+artifitialInteligentWorks+mathWorks;
+    //console.log(totalPointsToPass);
+    //console.log(studentData);
+    let totalPoints = 0;
+    for(subject in studentData){
+        //console.log(subject);
+        //console.log(studentData[subject]);
+        totalPoints += studentData[subject][0];
+    }
+    //console.log(totalPoints);
+    let percentage = (totalPoints*100)/totalPointsToPass;
+    //console.log(percentage);
+    if(percentage >= 75){
+        return true;
+    }else{
+        return false;
+    }
+}
