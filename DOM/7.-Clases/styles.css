@@ -1,0 +1,16 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+.red{
+    background: red;
+    color: #fff;
+    text-align: center;
+}
+
+.blue{
+    background-color: blue;
+    color: #fff;
+    text-align: center;
+}
